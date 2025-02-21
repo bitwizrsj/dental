@@ -3,15 +3,7 @@ import { Menu, X, Phone, Clock, ChevronDown, Facebook, Twitter, Instagram, Linke
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isServicesOpen, setIsServicesOpen] = useState(false);
 
-  const services = [
-    "Primary Care",
-    "Pediatrics",
-    "Women's Health",
-    "Laboratory Services",
-    "Vaccinations"
-  ];
 
   const socialLinks = [
     { icon: Facebook, href: "https://facebook.com", label: "Facebook" },
