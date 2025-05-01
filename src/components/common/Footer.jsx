@@ -4,7 +4,7 @@ import { Facebook, Twitter, Instagram, Linkedin, Phone, Mail, MapPin } from 'luc
 const Footer = () => {
   return (
     <footer className="bg-slate-900 pt-16 border-t border-slate-800">
-      <div className="max-w-6xl mx-auto px-8">
+      <div className="max-w-7xl mx-auto px-8">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12">
           {/* Company Info */}

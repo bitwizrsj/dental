@@ -2,13 +2,13 @@ import React from 'react';
 
 const DentalClinic = () => {
     return (
-        <div className="bg-slate-900 p-8 min-h-screen flex justify-center items-center">
-            <div className="w-full max-w-6xl mx-auto">
+        <div className="bg-white p-8 min-h-screen flex justify-center items-center">
+            <div className="w-full max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
                     {/* Left Column */}
                     <div className="col-span-1 md:col-span-4 flex flex-col justify-center items-center md:items-start">
-                        <h1 className="text-4xl font-bold text-white mb-4 text-center md:text-left">OUR CLINIC</h1>
-                        <p className="text-slate-400 text-sm leading-relaxed mb-8 text-center md:text-left">
+                        <h1 className="text-4xl font-bold text-slate-900 mb-4 text-center md:text-left">OUR CLINIC</h1>
+                        <p className="text-gray-700 text-sm leading-relaxed mb-8 text-center md:text-left">
                             Modern treatments tailored to your unique needs ensure a comfortable, satisfying
                             dental experience.
                         </p>
@@ -16,7 +16,7 @@ const DentalClinic = () => {
                         {/* Feature Cards */}
                         <div className="space-y-4 w-full">
                             {/* Innovative Equipment Card */}
-                            <div className="bg-slate-800/50 rounded-2xl p-6 backdrop-blur">
+                            <div className="bg-gray-100 rounded-2xl p-6 shadow-sm">
                                 <div className="flex items-start gap-3">
                                     <div className="text-teal-500 mt-1">
                                         <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none">
@@ -26,8 +26,8 @@ const DentalClinic = () => {
                                         </svg>
                                     </div>
                                     <div>
-                                        <h3 className="text-white font-medium mb-2">Innovative Equipment</h3>
-                                        <p className="text-slate-400 text-sm leading-relaxed">
+                                        <h3 className="text-slate-900 font-medium mb-2">Innovative Equipment</h3>
+                                        <p className="text-gray-700 text-sm leading-relaxed">
                                             We use cutting-edge technology for diagnosis and treatment, ensuring a high standard of medical care.
                                         </p>
                                     </div>
@@ -35,7 +35,7 @@ const DentalClinic = () => {
                             </div>
 
                             {/* Personalized Approach Card */}
-                            <div className="bg-slate-800/50 rounded-2xl p-6 backdrop-blur">
+                            <div className="bg-gray-100 rounded-2xl p-6 shadow-sm">
                                 <div className="flex items-start gap-3">
                                     <div className="text-teal-500 mt-1">
                                         <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none">
@@ -45,9 +45,9 @@ const DentalClinic = () => {
                                         </svg>
                                     </div>
                                     <div>
-                                        <h3 className="text-white font-medium mb-2">Personalized Approach</h3>
-                                        <p className="text-slate-400 text-sm leading-relaxed">
-                                            We Develop Customized Treatment And Care Plans, Fully Adapted To The Needs Of Each Patient.
+                                        <h3 className="text-slate-900 font-medium mb-2">Personalized Approach</h3>
+                                        <p className="text-gray-700 text-sm leading-relaxed">
+                                            We develop customized treatment and care plans, fully adapted to the needs of each patient.
                                         </p>
                                     </div>
                                 </div>
@@ -57,7 +57,7 @@ const DentalClinic = () => {
 
                     {/* Center Column - Clinic Image */}
                     <div className="col-span-1 md:col-span-5 flex justify-center items-center">
-                        <div className="rounded-3xl overflow-hidden w-full h-full max-h-[500px]">
+                        <div className="rounded-3xl overflow-hidden w-full h-full max-h-[500px] shadow">
                             <img
                                 src="https://img.freepik.com/premium-photo/dental-clinic-interior-with-modern-dentistry-equipment_23-2147879165.jpg?w=740"
                                 alt="Modern dental clinic"
@@ -69,17 +69,17 @@ const DentalClinic = () => {
                     {/* Right Column */}
                     <div className="col-span-1 md:col-span-3 flex flex-col justify-center items-center md:items-start">
                         <div className="mb-8 text-center md:text-left">
-                            <h2 className="text-2xl font-semibold text-white mb-3">Expert Care</h2>
-                            <p className="text-slate-400 text-sm leading-relaxed mb-4">
+                            <h2 className="text-2xl font-semibold text-slate-900 mb-3">Expert Care</h2>
+                            <p className="text-gray-700 text-sm leading-relaxed mb-4">
                                 Our dedicated doctors continuously enhance their expertise to bring you the highest standard of dental services.
                             </p>
-                            <button className="bg-white text-slate-900 px-6 py-2 rounded-full text-sm hover:bg-slate-100 transition-colors">
+                            <button className="bg-blue-600 text-white px-6 py-2 rounded-full text-sm hover:bg-blue-700 transition-colors">
                                 Meet our team
                             </button>
                         </div>
 
                         {/* Doctor Image */}
-                        <div className="rounded-3xl overflow-hidden w-full h-full max-h-[400px]">
+                        <div className="rounded-3xl overflow-hidden w-full h-full max-h-[400px] shadow">
                             <img
                                 src="https://img.freepik.com/free-photo/stomatologist-doctor-explaining-proper-dental-hygiene-patient-holding-sample-human-jaw_158595-7678.jpg?t=st=1740076522~exp=1740080122~hmac=26cc1e7868d6e70d6878f2f501a388b77d3bc308602c0739463116a06854c6e9&w=1380"
                                 alt="Dental professional"

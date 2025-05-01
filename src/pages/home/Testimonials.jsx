@@ -47,17 +47,16 @@ const Testimonials = () => {
     }
   };
 
-  // Slice the testimonials array to show only 1, 2, or 3 testimonials
   const displayedTestimonials = testimonials.slice(currentIndex, currentIndex + 3);
 
   return (
-    <div className="bg-slate-900 py-16">
-      <div className="max-w-6xl mx-auto px-8">
+    <div className="bg-white py-16">
+      <div className="max-w-7xl mx-auto px-8">
         {/* Header */}
         <div className="mb-12 flex justify-between items-end">
           <div>
-            <h2 className="text-3xl font-bold text-white mb-4">Patient Stories</h2>
-            <p className="text-slate-400 max-w-lg">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Patient Stories</h2>
+            <p className="text-gray-600 max-w-lg">
               Read what our patients say about their experience at our clinic and the results of their treatments.
             </p>
           </div>
@@ -66,17 +65,17 @@ const Testimonials = () => {
           <div className="flex gap-2">
             <button
               onClick={prevTestimonial}
-              className="p-3 rounded-full bg-slate-800 hover:bg-slate-700 transition-colors disabled:opacity-50"
+              className="p-3 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors disabled:opacity-50"
               disabled={currentIndex === 0}
             >
-              <ChevronLeft className="w-5 h-5 text-white" />
+              <ChevronLeft className="w-5 h-5 text-slate-700" />
             </button>
             <button
               onClick={nextTestimonial}
-              className="p-3 rounded-full bg-slate-800 hover:bg-slate-700 transition-colors disabled:opacity-50"
+              className="p-3 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors disabled:opacity-50"
               disabled={currentIndex + 3 >= testimonials.length}
             >
-              <ChevronRight className="w-5 h-5 text-white" />
+              <ChevronRight className="w-5 h-5 text-slate-700" />
             </button>
           </div>
         </div>
@@ -84,9 +83,9 @@ const Testimonials = () => {
         {/* Testimonials Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {displayedTestimonials.map((testimonial, index) => (
-            <div 
-              key={index} 
-              className="bg-slate-800/50 backdrop-blur rounded-3xl p-8 hover:bg-slate-800/60 transition-colors"
+            <div
+              key={index}
+              className="bg-gray-50 rounded-3xl p-8 hover:bg-gray-100 transition-colors shadow-sm"
             >
               {/* Rating */}
               <div className="flex gap-1 mb-6">
@@ -96,20 +95,20 @@ const Testimonials = () => {
               </div>
 
               {/* Quote */}
-              <blockquote className="text-slate-200 text-lg mb-8">
+              <blockquote className="text-slate-800 text-lg mb-8">
                 "{testimonial.quote}"
               </blockquote>
 
               {/* Author */}
               <div className="flex items-center gap-4">
-                <img 
-                  src={testimonial.image} 
+                <img
+                  src={testimonial.image}
                   alt={testimonial.name}
                   className="w-12 h-12 rounded-full object-cover"
                 />
                 <div>
-                  <h4 className="text-white font-medium">{testimonial.name}</h4>
-                  <p className="text-slate-400 text-sm">{testimonial.role}</p>
+                  <h4 className="text-slate-900 font-medium">{testimonial.name}</h4>
+                  <p className="text-gray-500 text-sm">{testimonial.role}</p>
                 </div>
               </div>
             </div>

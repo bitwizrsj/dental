@@ -21,7 +21,7 @@ const BookAppointment = () => {
 
   return (
     <div className="bg-slate-900 py-16">
-      <div className="max-w-6xl mx-auto px-8">
+      <div className="max-w-7xl mx-auto px-8">
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-white mb-4">Book an Appointment</h2>

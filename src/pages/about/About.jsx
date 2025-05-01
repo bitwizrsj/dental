@@ -5,7 +5,7 @@ import { Users, Award, Heart, Clock, Star, ArrowRight } from 'lucide-react';
 const AboutHero = () => {
   return (
     <div className="relative bg-slate-900 py-20">
-      <div className="max-w-6xl mx-auto px-8">
+      <div className="max-w-7xl mx-auto px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
@@ -43,7 +43,7 @@ const Stats = () => {
 
   return (
     <div className="bg-slate-800">
-      <div className="max-w-6xl mx-auto px-8 py-16">
+      <div className="max-w-7xl mx-auto px-8 py-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
@@ -61,7 +61,7 @@ const Stats = () => {
 const Mission = () => {
   return (
     <div className="bg-slate-900 py-20">
-      <div className="max-w-6xl mx-auto px-8">
+      <div className="max-w-7xl mx-auto px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="order-2 lg:order-1">
             <img 
@@ -112,7 +112,7 @@ const TeamPreview = () => {
 
   return (
     <div className="bg-slate-800 py-20">
-      <div className="max-w-6xl mx-auto px-8">
+      <div className="max-w-7xl mx-auto px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-white mb-4">Meet Our Expert Team</h2>
           <p className="text-slate-400 max-w-2xl mx-auto">
@@ -147,7 +147,7 @@ const TeamPreview = () => {
 const Technology = () => {
   return (
     <div className="bg-slate-900 py-20">
-      <div className="max-w-6xl mx-auto px-8">
+      <div className="max-w-7xl mx-auto px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="text-3xl font-bold text-white mb-6">Advanced Technology</h2>
@@ -186,7 +186,7 @@ const Technology = () => {
 const ReviewsPreview = () => {
   return (
     <div className="bg-slate-800 py-20">
-      <div className="max-w-6xl mx-auto px-8">
+      <div className="max-w-7xl mx-auto px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-white mb-4">What Our Patients Say</h2>
           <p className="text-slate-400 max-w-2xl mx-auto">

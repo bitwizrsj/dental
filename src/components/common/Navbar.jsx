@@ -3,8 +3,7 @@ import { Menu, X, Phone, Clock, ChevronDown, Facebook, Twitter, Instagram, Linke
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
-
+  const [isServicesOpen, setIsServicesOpen] = useState(false); // To manage services dropdown
   const socialLinks = [
     { icon: Facebook, href: "https://facebook.com", label: "Facebook" },
     { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
@@ -12,11 +11,13 @@ const Navbar = () => {
     { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" }
   ];
 
+  const services = ["General Checkup", "Surgery", "Dental Care", "Emergency Services"]; // Example services list
+
   return (
-    <nav className="bg-white shadow-lg">
+    <nav className="bg-white  shadow-lg sticky top-0 z-50">
       {/* Top bar with contact info and social media */}
       <div className="hidden lg:block bg-slate-900 text-white py-2">
-        <div className="container mx-auto px-4 flex justify-between items-center">
+        <div className="container max-w-7xl mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center space-x-4">
             <div className="flex items-center">
               <Phone className="w-4 h-4 mr-2" />
@@ -43,7 +44,7 @@ const Navbar = () => {
       </div>
 
       {/* Main navbar */}
-      <div className="container mx-auto px-4">
+      <div className="container max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="text-xl font-bold text-blue-600">
@@ -66,10 +67,9 @@ const Navbar = () => {
             </a>
             <a href='/book-appointment'>
               <button className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors">
-              Book Appointment
-            </button>
+                Book Appointment
+              </button>
             </a>
-            
           </div>
 
           {/* Mobile menu button */}

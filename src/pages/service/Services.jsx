@@ -161,7 +161,7 @@ const ServiceDetail = ({ title, description, features, image }) => {
   
     return (
       <div className="bg-slate-900 min-h-screen py-16">
-        <div className="max-w-6xl mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4">
           {/* Header */}
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Our Dental Services</h1>
